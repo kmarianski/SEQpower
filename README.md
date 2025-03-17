@@ -10,7 +10,7 @@ Before running SEQpower, ensure you have the following installed:
 
 ## Setup Instructions
 
-1. **Clone and Navigate into the repository
+1. **Clone and Navigate into the repository**
 ```bash
 git clone https://github.com/kmarianski/SEQpower.git
 cd SEQpower
