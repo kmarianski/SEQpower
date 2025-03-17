@@ -1,0 +1,5 @@
+outputs/
+notebooks/out_csv/
+*.sif
+*.tar.gz
+sfs_files/
