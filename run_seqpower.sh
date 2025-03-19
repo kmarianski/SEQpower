@@ -15,7 +15,7 @@ for cases in "${CASE_COUNTS[@]}"; do
     echo "Total sample size: $total, Proportion of cases: $p1"
     
     spower LOGIT "$SFS_FILE" \
-    --def_rare 0.01 \
+    --def_rare 0.001 \
     --moi A \
     --def_neutral -0.0001 0.0001 \
     --proportion_detrimental 1 \
@@ -27,7 +27,7 @@ for cases in "${CASE_COUNTS[@]}"; do
     --p1 "$p1" \
     --limit 10 \
     --alpha 0.05 \
-    --method "KBAC --name K1 --mafupper 0.01 --maflower 0 --alternative 1 --moi additive --permutations 1000 --adaptive 0.1" \
+    --method "KBAC --name K1 --mafupper 0.001 --maflower 0 --alternative 1 --moi additive --permutations 1000 --adaptive 0.1" \
     --replicates 1000 \
     --jobs 32 \
     -o "$output"

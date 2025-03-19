@@ -18,7 +18,7 @@ cd SEQpower
 
 2. **Create necessary directories**
 ```bash
-mkdir -p notebooks/out_csv sfs_files outputs
+mkdir -p notebooks/out_csv sfs_files outputs logs
 ```
 
 3. **Pull the Singularity container**  
